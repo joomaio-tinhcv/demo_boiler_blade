@@ -1,43 +1,33 @@
 {
-    "name": "smpleader/spt-boilerplate",
-    "type": "project",
-    "description": "The boilerplate to use SPT Framework.",
-    "keywords": [
-        "framework", "spt", "boilerplate"
-    ],
+    "name": "joomaio-tinhcv/demo_boiler_blade",
+    "description": "The SPT Boiler Blade.",
+    "keywords": ["framework", "spt", "boiler_blade"],
     "license": "GPL-2.0-or-later",
+    "homepage": "https://github.com/smpleader/spt/wiki",
+    "support": {
+        "issues": "https://github.com/smpleader/spt/issues",
+        "source": "https://github.com/smpleader/spt"
+    },
+    "authors": [
+        {
+            "name": "Pham Minh",
+            "email": "contact@smpleader.com"
+        }
+    ],
     "require": {
         "php": "^7.0",
-        "guzzlehttp/guzzle": "^7.4",
-        "illuminate/container": "^8.0",
-        "illuminate/contracts": "^8.0",
-        "illuminate/events": "^8.0",
-        "illuminate/routing": "^8.0",
-        "illuminate/support": "^8.0",
-        "joomla/di": "~1.3",
-        "smpleader/spt": "^0.6.44"
+        "ext-json": "*",
+        "ext-mbstring": "*"
     },
-    "require-dev": { 
-        "phpunit/phpunit": "^9.5"
-    },
-    "config": {
-        "optimize-autoloader": true,
-        "preferred-install": "dist",
-        "sort-packages": true
-    },
-    "autoload": {
-        "psr-4": {
-            "App\\": "php_modules/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
-        }
+    "suggest": {
+        "ext-ftp": "Required to use the Flysystem FTP driver.",
+        "ext-gd": "Required to use work with image process.",
+        "ext-memcached": "Required to use the memcache cache driver.",
+        "ext-pcntl": "Required to use all features of the queue worker.",
+        "ext-posix": "Required to use all features of the queue worker.",
+        "phpunit/phpunit": "Required to use assertions and run tests (^8.4|^9.0).",
+        "guzzlehttp/guzzle": "Required to use the HTTP Client, Mailgun mail driver and the ping methods on schedules (^6.3.1|^7.0)."
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "scripts": {
-         
-    }
+    "prefer-stable": true
 }
