@@ -1,0 +1,114 @@
+.wrap-footer {
+    width: 100%;
+    background-color: $bg-footer;
+    padding-top: 14px;
+    min-height: 200px;
+
+    .footer {
+        max-width: 1250px;
+        margin: 0 auto;
+        @include flex();
+        align-items: flex-start;
+        padding: 0 5.6px;
+        border-bottom: 2px solid rgb(223, 224, 225);
+
+        &-list {
+            width: 80%;
+            @include flex();
+            align-items: flex-start;
+            padding-bottom: 14px;
+            &-item {
+                width: calc(100%/4)
+            }
+            h5 {
+                font-weight: lighter;
+                color: $primary-color;
+                text-transform: capitalize;
+                margin: 0px 0px 1rem;
+                font-size: 1.2rem;
+                line-height: 1;
+                white-space: nowrap;
+            }
+            ul {
+                font-size: 1.2em;
+                font-weight: lighter;
+                width: 100%;
+                li {
+                    width: 100%;
+                    margin: 0 0 6.4px;
+                    white-space: nowrap;
+                    a {
+                        color: $blue-color;
+                    }
+                }
+            }
+        }
+        &-market {
+            width: 20%;
+            padding-bottom: 14px;
+            clear: both;
+            .footer-list-item {
+                width: 100%;
+            }
+            h5 {
+                font-weight: lighter;
+                color: $primary-color;
+                text-transform: capitalize;
+                margin: 0px 0px 1rem;
+                font-size: 1.2rem;
+                line-height: 1;
+                white-space: nowrap;
+            }
+            ul {
+                font-size: 1.2em;
+                font-weight: lighter;
+                width: 100%;
+                li {
+                    width: 100%;
+                    margin: 0 0 6.4px;
+                    a {
+                        color: $blue-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .un-footer {
+        max-width: 1250px;
+        margin: 0 auto;
+        padding: 14px 5.6px 0 5.6px;
+        overflow: hidden;
+        @include flex();
+
+        &-left {
+            width: 45%;
+            h5 {
+                color: rgb(128, 128, 128);
+                fill: rgb(128, 128, 128);
+                text-transform: uppercase;
+                margin-bottom: 1rem;
+                font-size: 1.6em;
+            }
+            p {
+                font-size: 1.1em;
+            }
+        }
+        &-right {
+            width: 20%;
+            clear: both;
+
+            p {
+                padding-top: 42px;
+                font-size: 1.1em;
+            }
+        }
+    }
+    .un-footer-full {
+        clear: both;
+        width: 100%;
+        max-width: 1250px;
+        margin: 0 auto;
+        padding: 14px 5.6px;
+    }
+}

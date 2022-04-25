@@ -1,0 +1,15 @@
+$primary-color: rgb(57, 76, 90);
+$blue-color: rgb(65, 131, 196);
+$blue: rgb(0, 121, 251);
+$gray-color: lightslategray;
+$red-color: rgb(235, 77, 75);
+$bg-gray: #f9fafb;
+$color-green: rgb(0, 128, 0);
+$border-color: rgb(212, 212, 213);
+$bg-footer: #F9FAFB;
+
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

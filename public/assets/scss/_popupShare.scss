@@ -1,0 +1,60 @@
+.popup-share {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+
+    .over-lay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.4;
+    }
+    .share {
+        position: relative;
+        min-width: 300px;
+        max-width: 500px;
+        border: 1px solid #ccc;
+        background: #fff;
+        overflow: auto;
+        border-radius: 4px;
+        outline: none;
+        padding: 2.5rem 2rem 1rem;
+        text-align: center;
+        margin: auto;
+        h2 {
+            padding: 0px;
+            margin: 0px 0px 0.4rem;
+            color: rgb(91, 102, 118);
+            font-size: 1.71429rem;
+            line-height: 1;
+            font-weight: 400;
+        }
+
+        .social {
+            ul {
+                li {
+                    margin: 0 4px;
+                    cursor: pointer
+                }
+                @include flex();
+                justify-content: center;
+                svg {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+        }
+        .close-share {
+            position: absolute;
+            right: 10px;
+            top: 1px;
+            font-size: 23px; 
+            cursor: pointer;
+        }
+    }
+}

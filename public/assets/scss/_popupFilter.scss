@@ -1,0 +1,82 @@
+.popup-filter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: right;
+
+    .over-lay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.4;
+    }
+    .filter {
+        position: relative;
+        min-width: 300px;
+        max-width: 500px;
+        border: 1px solid #ccc;
+        background: #fff;
+        overflow: auto;
+        outline: none;
+        padding: 2.5rem 1rem 1rem;
+        text-align: center;
+
+        &-bot {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            .button {
+                display: flex;
+                justify-content: space-between;
+                padding: 5px 1rem;
+                border-top: 1px #aaa solid;
+                border-bottom: 1px #aaa solid;
+
+                button {
+                    padding: 7px 12px;
+                    display: inline-block;
+                    border-radius: 3px;
+                    font-weight: 400;
+                    -webkit-box-pack: center;
+                    justify-content: center;
+                    white-space: nowrap;
+                    line-height: 1em;
+                    cursor: pointer;
+                    border: none;
+                    -webkit-box-align: baseline;
+                    align-items: baseline;
+                    transition: color 0.4s ease 0s;
+                    font-family: Rubik, "Helvetica Neue", Arial, Helvetica, sans-serif;
+                    font-size: 1rem;
+                }
+
+                .btn-reset {
+                    background-color: white;
+                    border: 1px solid red;
+                    color: red;
+                }
+                .btn-cancel {
+                    background-color: white;
+                    border: 1px solid #2185D0;
+                    color: #2185D0;
+                }
+                .btn-aplly {
+                    background-color: #2185D0;
+                    border: 1px solid #2185D0;
+                    color: white;
+                }
+            }
+
+            .bot-ft {
+                text-align: left;
+                padding: 10px 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,121 @@
+.content-about-detail {
+  width: 100%;
+  margin-bottom: 0.9rem;
+  h3 {
+    padding: 0px;
+    margin: 0px;
+    color: rgb(91, 102, 118);
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 400;
+    min-height: 1rem;
+    padding-bottom: 8.4px;
+  }
+  &-main {
+    width: 100%;
+    position: relative;
+    box-shadow: rgb(34 36 38 / 15%) 0px 1px 2px 0px;
+    padding: 1.5em 1em 0.7em 1em;
+    margin: 0px 0px 0.5rem;
+    border-radius: 0.285714rem;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    overflow-wrap: break-word;
+
+    p {
+      margin: 0 0 1em;
+      line-height: 1.4285em;
+      color: rgb(57, 76, 90);
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
+
+.content-detail-table {
+  width: 100%;
+  margin-bottom: 0.9rem;
+  h3 {
+    padding: 0px;
+    margin: 0px;
+    color: rgb(91, 102, 118);
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 400;
+    min-height: 1rem;
+  }
+  .content-table-detail {
+    width: 100%;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    table {
+      margin: 0;
+      font-size: 14px;
+      th {
+        text-align: left;
+        color: rgb(92, 127, 199);
+        font-size: 16px;
+        font-weight: 400;
+      }
+      td {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+  .pagination {
+    color: rgb(119, 136, 153);
+    font-size: 16px;
+    text-align: left;
+    font-weight: 400;
+  }
+  .show-more {
+    width: 100%;
+    button {
+      display: inline-block;
+      width: 100%;
+      background-color: white;
+      border: none;
+      border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+      border-left: 1px solid rgba(34, 36, 38, 0.15);
+      border-right: 1px solid rgba(34, 36, 38, 0.15);
+      border-radius: 0 0 4px 4px;
+      padding: 10px;
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.6);
+      margin-top: 7px;
+      &:hover {
+        background-color: #ECECEC;
+      }
+    }
+  }
+}
+.content-interest {
+  width: 100%;
+  position: relative;
+  box-shadow: rgb(34 36 38 / 15%) 0px 1px 2px 0px;
+  padding: 1.5em 1em 0.7em 1em;
+  margin: 0px 0px 0.5rem;
+  border-radius: 0.285714rem;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  overflow-wrap: break-word;
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  div {
+    @include flex();
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    p {
+      display: inline-block;
+      padding: 9px;
+      background-color: #E0F1FD;
+      border-radius: 3px;
+      margin-right: 15px;
+      white-space: nowrap;
+    }
+  }
+}

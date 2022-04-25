@@ -1,0 +1,200 @@
+.content-chart {
+  width: 100%;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+
+  &-title {
+    margin: 0px 0px 0.4rem;
+    color: rgb(91, 102, 118);
+    font-size: 1.28571rem;
+    line-height: 1;
+    font-weight: 400;
+  }
+
+  &-filter {
+    @include flex();
+    flex-wrap: wrap;
+    color: rgb(57, 76, 90);
+    font-size: 14px;
+    margin-top: 15px;
+
+    &-drop {
+      padding: 6px 12px;
+      background: #fff;
+      box-shadow: none;
+      border: 1px solid rgba(34, 36, 38, 0.15);
+      border-radius: 0.28571429rem;
+      color: rgba(0, 0, 0, 0.87);
+      margin: 0 10px;
+    }
+
+    &-drop-date {
+      @include flex();
+
+      .content-flex {
+        @include flex();
+        justify-content: flex-start;
+      }
+      .date-left {
+        @include flex();
+        justify-content: flex-start;
+        margin-left: 20px;
+        button {
+          display: inline-block;
+          border-radius: 3px;
+          font-weight: 400;
+          -webkit-box-pack: center;
+          justify-content: center;
+          padding: 10px;
+          white-space: nowrap;
+          line-height: 1em;
+          cursor: pointer;
+          border: none;
+          -webkit-box-align: baseline;
+          align-items: baseline;
+          transition: color 0.4s ease 0s;
+          font-family: Rubik, "Helvetica Neue", Arial, Helvetica, sans-serif;
+          background: none rgb(224, 225, 226);
+          color: rgba(0, 0, 0, 0.6);
+          font-size: 0.785714rem;
+          margin: 0 10px;
+          img {
+            width: 10px;
+          }
+        }
+      }
+    }
+    .share-right {
+      @include flex();
+      button {
+        margin-left: 20px;
+        height: 30px;
+        display: inline-block;
+        -webkit-box-pack: center;
+        justify-content: center;
+        padding: 0.785714em 1.5em;
+        white-space: nowrap;
+        line-height: 1em;
+        border: none;
+        -webkit-box-align: baseline;
+        align-items: baseline;
+        transition: color 0.4s ease 0s;
+        font-family: Rubik, "Helvetica Neue", Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        border-radius: 4px;
+        text-transform: none;
+        font-size: 0.785714rem;
+        background: none transparent !important;
+        text-shadow: none !important;
+        box-shadow: rgb(33 133 208) 0px 0px 0px 1px inset !important;
+        color: rgb(33, 133, 208) !important;
+      }
+    }
+  }
+
+  &-main {
+    width: 100%;
+    background-color: pink;
+    margin-top: 10px;
+    #datatable {
+      display: none;
+    }
+  }
+
+  &-api {
+      display: flex;
+      justify-content: flex-end;
+      a {
+          max-width: 185px;
+          margin-top: 30px;
+      }
+  }
+}
+
+.content-news {
+  width: 100%;
+  margin-top: 46px;
+  &-title {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 8px 0;
+    width: 100%;
+    display: inline-block;
+    border-top: 2px gray solid;
+    border-bottom: 2px gray solid;
+    margin-bottom: 25px
+  }
+  &-list {
+    width: 100%;
+    &-item {
+      width: 100%;
+      float: left;
+      padding-right: 20px;
+      padding-bottom: 25px;
+      margin-bottom: 25px;
+      border-bottom: 1px solid #eaeaea;
+      font-size: 15px;
+      font-weight: 600;
+      display: block;
+      clear: both;
+      display: flex;
+
+      &:last-child {
+        border-bottom: none;
+      }
+      .image-news {
+        width: 30%;
+        float: left;
+        margin-right: 10px;
+        img {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+      .title-news {
+        width: 70%;
+        float: left;
+      }
+    }
+  }
+}
+
+@media (max-width: 463px) {
+  .content-chart-filter-drop-date {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    .date-left {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .input-two {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .full-700 {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .content-chart-filter {
+    display: block;
+    .share-right {
+      margin-top: 10px;
+    }
+  }
+}
+@media (max-width: 843px) {
+  .content-news {
+    margin-top: 37px;
+    &-list-item {
+      font-size: 12px;
+    }
+  }
+
+
+}

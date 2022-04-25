@@ -1,0 +1,102 @@
+@media (max-width: 750px) {
+    .content-detail-infor-top-right-rate .detail-rank {
+        display: block;
+
+        div:nth-child(1),div:nth-child(2),div:nth-child(3) {
+            padding: 0;
+            border-left: none;
+            border-right: none;
+        }
+        div:nth-child(1),div:nth-child(2) {
+            border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+        }
+    }
+    .content-detail-infor-bot {
+        display: block;
+        text-align: right;
+        .bot-desc {
+            padding-bottom: 10px;
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+
+    .content-economic-main {
+        overflow: auto;
+    }
+    .content-economic-main {
+        flex-wrap: wrap;
+    }
+    .content-economic-main-left, .content-economic-main-right {
+       width: 100%;
+    }
+    
+}
+@media (max-width: 700px) {
+    .content-similar-item {
+        flex-wrap: wrap;
+        .content-similar-item-x {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+}
+@media (max-width: 500px) { 
+    .content-detail-infor-top {
+        display: block;
+
+        .content-detail-infor-top-right-rate .detail-rank {
+            display: flex;
+            margin-top: 15px;
+            div {
+                border-bottom: none;
+                h4 {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .content-review-item .list {
+        flex-wrap: nowrap;
+        overflow: auto;
+        .item {
+            min-width: 160px;
+        }
+    }
+
+    .content-detail-infor-bot .bot-desc {
+        text-align: center;
+    }
+    .content-detail-infor-bot .detail-icon {
+        justify-content: center;
+    }
+}
+@media (max-width: 445px) { 
+    .content-detail-infor-bot .detail-icon  {
+        flex-wrap: wrap;
+
+        .list-icon {
+            margin-top: 10px;
+        }
+    }
+}
+
+@media (max-width: 400px) { 
+    .content-detail-infor-top .content-detail-infor-top-right-rate .detail-rank {
+        display: block;
+        margin-top: 20px;
+        margin-left: 5px;
+        div {
+            display: flex;
+            justify-content: center;
+            h4 {
+                padding-right: 20px;
+            }
+        }
+    }
+
+    .content-economic-main {
+        white-space: nowrap;
+    }
+}

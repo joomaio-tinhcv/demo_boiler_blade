@@ -1,0 +1,96 @@
+// css view all popup -------------------------------
+.popup-viewall {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .over-lay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    opacity: 0.5;
+  }
+
+  .popup-main {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+    background-color: white;
+    z-index: 2;
+    color: rgb(57, 76, 90);
+    padding: 1.5rem 2rem !important;
+    border-radius: 4px;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 400;
+      margin: calc(1rem - 0.142857em) 0px 1rem;
+    }
+
+    .list-category {
+      label {
+        margin: 0px 0px 5px;
+        line-height: 1.4285em;
+        font-size: 14px;
+      }
+
+      div {
+        span {
+          font-size: 0.95em;
+          display: inline-block;
+          padding: 0.2rem 0.5rem;
+          text-transform: uppercase;
+          border-radius: 3px;
+          margin-bottom: 0.3rem;
+          line-height: normal;
+          background-color: rgba(186, 186, 223, 0.24);
+          color: rgb(92, 127, 199);
+        }
+      }
+    }
+    .list-tag {
+        label {
+          margin: 0px 0px 5px;
+          line-height: 1.4285em;
+          font-size: 14px;
+          margin-top: 20px;
+          span {
+              font-size: 12px;
+          }
+        }
+  
+        div {
+          span {
+            font-size: 0.95em;
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            text-transform: uppercase;
+            border-radius: 3px;
+            margin-bottom: 0.3rem;
+            line-height: normal;
+            background-color: rgba(186, 186, 223, 0.24);
+            color: rgb(0, 128, 0);
+          }
+        }
+    }
+    #close-viewall {
+        position: absolute;
+        z-index: 3;
+        font-size: 28px;
+        font-weight: 900;
+        top: 0px;
+        right: 20px;
+        cursor: pointer;
+        color: black;
+    }
+  }
+
+}

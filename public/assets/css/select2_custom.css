@@ -1,0 +1,15 @@
+.select2-container--default .select2-search--inline .select2-search__field{
+    height: 27px !important;
+    padding-left: 0px !important;
+    border: none !important;
+}
+.select2-container--default .select2-search--inline .select2-search__field:focus{
+    border: none !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+    background-color: transparent !important;
+    position: relative !important;
+    border-right: none !important;
+    margin-left: 0 !important;
+}

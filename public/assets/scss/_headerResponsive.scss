@@ -1,0 +1,34 @@
+@media (max-width: 750px) {
+    
+}
+@media (max-width: 1000px) {
+    .wrap-header .header {
+        align-items: flex-start;
+    }
+    .header-menu {
+        display: none;
+    }
+    .header-bar {
+        display: block !important;
+    }
+    .wrap-header .header-logo {
+        margin-top: 0;
+    }
+
+    .top__cost-left {
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        &--list {
+            overflow-x: auto;
+            overflow-y: hidden;
+            &-item {
+                white-space: nowrap;
+            }
+        }
+    }
+    .top__cost-right {
+        display: none;
+    }
+
+}

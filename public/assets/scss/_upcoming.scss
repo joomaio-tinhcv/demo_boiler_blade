@@ -1,0 +1,21 @@
+.wrap-content .content-table td {
+    text-align: right;
+}
+
+table th {
+    text-align: right;
+}
+
+.wrap-content .content-table td {
+    padding: 18px 10px 18px 60px !important;
+}
+table th:first-child {
+    text-align: left;
+}
+.wrap-content .content-table td:nth-child(1) {  
+    padding: 18px 60px 18px 10px !important;
+}
+
+.upcoming-right {
+    margin-top: 8.4px;
+}

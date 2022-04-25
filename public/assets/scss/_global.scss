@@ -1,0 +1,114 @@
+// @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700&subset=latin);
+
+body {
+    font-family: Rubik,Helvetica Neue,Arial,Helvetica,sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(91, 102, 118);
+}
+
+.ui.table tbody tr td a {
+    color: rgb(65, 131, 196);
+}
+
+.ui.table tbody tr td {
+    color: rgb(57, 76, 90);
+    border-color: rgba(34, 36, 38, 0.15);
+}
+.hidden {
+    display: none;
+}
+.container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    max-width: 100% !important;
+}
+
+li {
+    list-style: none;
+}
+ul {
+    padding: 0;
+    margin: 0%;
+}
+a {
+    text-decoration: none;
+}
+
+.btn-footer {
+    display: inline-block;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 0.785714em 1.5em;
+    line-height: 1em;
+    cursor: pointer;
+    border: none;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    transition: color 0.4s ease 0s;
+    font-family: Rubik, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    border-radius: 4px;
+    text-transform: none;
+    font-size: 14px;
+    background: none transparent !important;
+    text-shadow: none !important;
+    box-shadow: rgb(33 133 208) 0px 0px 0px 1px inset !important;
+    color: rgb(33, 133, 208) !important;
+    text-align: center;
+    width: 80% !important;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+#table-responsive::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #E5E5E5;
+}
+
+#table-responsive::-webkit-scrollbar-thumb {
+    background: #949A9D;
+}
+th {
+    cursor: pointer;
+    &:hover {
+        background-color: #ECEDEE;
+    }
+}
+section {
+    padding: 0 14px;
+}
+.visi-hidden {
+    visibility: hidden;
+}
+.block {
+    display: block !important;
+}
+.mb-3 {
+    text-align: left;
+    label {
+        margin-bottom: 3px;
+    }
+}
+
+// .lan {
+//     border-radius: 100px;
+//     animation: 1.5s ease-out 0s infinite normal none running out;
+//     background-color: rgb(0, 121, 251);
+//     position: absolute;
+//     display: block;
+//     top: -6px;
+//     right: -8px;
+//     width: 7px;
+//     height: 7px;
+//     z-index: 100;
+// }
